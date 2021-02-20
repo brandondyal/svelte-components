@@ -1,9 +1,12 @@
 {
   "name": "@bd/button",
-  "version": "1.0.0",
+  "version": null,
   "description": "svelte button component",
   "main": "index.js",
-  "keywords": ["svelte", "svelte3"],
+  "keywords": [
+    "svelte",
+    "svelte3"
+  ],
   "author": "Brandon Dyal <brandondyal@gmail.com>",
   "license": "MIT",
   "publishConfig": {
