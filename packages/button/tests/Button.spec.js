@@ -7,6 +7,4 @@ describe('Button', () => {
 
     expect(getByText('Default Button')).toBeInTheDocument()
   })
-
-    // TODO: Test CustomEvent from eventDispatcher. Currently no known solutions using testing-library (https://github.com/testing-library/native-testing-library/issues/58).
 });
