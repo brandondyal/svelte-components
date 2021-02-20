@@ -1,9 +1,8 @@
 <script>
-  // js
+  export let text;
+  export let classNames = '';
+  export let handleClick;
+  export let isDisabled = null;
 </script>
 
-<!-- markup -->
-
-<style>
-  /* css */
-</style>
+<button class="{ classNames }" on:click="{ handleClick }" disabled={ isDisabled }>{ text }</button>
