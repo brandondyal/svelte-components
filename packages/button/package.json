@@ -1,6 +1,6 @@
 {
   "name": "@bd/button",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "svelte button component",
   "main": "index.js",
   "keywords": [
