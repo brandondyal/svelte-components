@@ -1,5 +1,5 @@
 {
-  "name": "@bd/button",
+  "name": "@brando-calrissian/button",
   "version": "1.0.3",
   "description": "svelte button component",
   "main": "index.js",
