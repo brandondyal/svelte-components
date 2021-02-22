@@ -1,7 +1,7 @@
 import createAuth0Client from '@auth0/auth0-spa-js';
 import { writable } from "svelte/store";
 
-export const isAuthenticated = writable(false);
+export const authStore = writable({});
 export const user = writable({});
 
 let auth0Client;
@@ -13,7 +13,8 @@ async function createClient(domain, clientId) {
     onRedirectCallback: onAuthenticationSuccess
   });
 
-  if (await auth0Client.isAuthenticated()) {
+  const isAuthenticated = await auth0Client.isAuthenticated();
+  if (isAuthenticated) {
     await onAuthenticationSuccess(auth0Client);
     return auth0Client;
   }
@@ -32,8 +33,10 @@ async function createClient(domain, clientId) {
 }
 
 async function onAuthenticationSuccess(auth0Client) {
+  const tokenClaims = await auth0Client.getIdTokenClaims();
+  const token = tokenClaims.__raw;
+  authStore.set({ isAuthenticated: true, token: token });
   user.set(await auth0Client.getUser());
-  isAuthenticated.set(true);
 }
 
 function logout() {
