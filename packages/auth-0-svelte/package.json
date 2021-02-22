@@ -9,7 +9,7 @@
     "svelte-store"
   ],
   "author": "Brandon Dyal <brandondyal@gmail.com>",
-  "license": "UNLICENSED",
+  "license": "MIT",
   "files": [
     "/lib"
   ],
