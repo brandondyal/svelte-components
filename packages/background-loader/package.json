@@ -1,9 +1,12 @@
 {
   "name": "@brando-calrissian/BackgroundLoader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "svelte background loader",
   "main": "index.js",
-  "keywords": ["svelte,", "loader"],
+  "keywords": [
+    "svelte,",
+    "loader"
+  ],
   "author": "Brandon Dyal <brandondyal@gmail.com>",
   "license": "MIT",
   "publishConfig": {
