@@ -1,6 +1,6 @@
 {
   "name": "@brando-calrissian/auth-0-svelte",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "authenticates clientId to auth0 domain, stores user and auth status in svelte store",
   "main": "lib/auth-0-svelte.js",
   "keywords": [
