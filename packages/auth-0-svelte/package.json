@@ -1,0 +1,21 @@
+{
+  "name": "@ocd/auth-0-svelte",
+  "version": "1.0.0",
+  "description": "authenticates clientId to auth0 domain, stores user and auth status in svelte store",
+  "main": "lib/auth-0-svelte.js",
+  "keywords": ["auth0", "svelte", "svelte-store"],
+  "author": "Brandon Dyal <brandondyal@gmail.com>",
+  "license": "UNLICENSED",
+  "files": [
+    "/lib"
+  ],
+
+  "dependencies": {
+    "@auth0/auth0-spa-js": "^1.13.6",
+    "svelte": "^3.0.0"
+  },
+
+  "peerDependencies": {
+    "svelte": "^3.0.0"
+  }
+}
