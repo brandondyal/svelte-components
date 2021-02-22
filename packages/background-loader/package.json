@@ -1,0 +1,23 @@
+{
+  "name": "@brando-calrissian/",
+  "version": "1.0.0",
+  "description": "svelte background loader",
+  "main": "index.js",
+  "keywords": ["svelte,", "loader"],
+  "author": "Brandon Dyal <brandondyal@gmail.com>",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "svelte": "^3.0.0"
+  },
+  "peerDependencies": {
+    "svelte": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/brandondyal/svelte-components.git"
+  },
+  "homepage": "https://github.com/brandondyal/svelte-components#readme"
+}
