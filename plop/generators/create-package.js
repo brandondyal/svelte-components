@@ -27,18 +27,13 @@ module.exports = {
   actions: [
     {
       type: 'add',
-      path: 'packages/{{kebabCase packageName}}/index.js',
-      templateFile: 'plop/templates/package/index.js.hbs'
+      path: 'packages/{{kebabCase packageName}}/lib/{{kebabCase packageName}}.js',
+      templateFile: 'plop/templates/package/main.js.hbs'
     },
     {
       type: 'add',
-      path: 'packages/{{kebabCase packageName}}/{{pascalCase packageName}}.svelte',
-      templateFile: 'plop/templates/package/Component.svelte.hbs'
-    },
-    {
-      type: 'add',
-      path: 'packages/{{kebabCase packageName}}/tests/{{pascalCase packageName}}.spec.js',
-      templateFile: 'plop/templates/package/Component.test.hbs'
+      path: 'packages/{{kebabCase packageName}}/tests/{{kebabCase packageName}}.test.js',
+      templateFile: 'plop/templates/package/main.test.js.hbs'
     },
     {
       type: 'add',

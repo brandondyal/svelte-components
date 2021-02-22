@@ -2,11 +2,17 @@
   "name": "@ocd/{{kebabCase packageName}}",
   "version": "1.0.0",
   "description": "{{packageDescription}}",
-  "main": "lib/{{kebabCase packageName}}.js",
+  "main": "index.js",
   "keywords": [{{{packageKeywords}}}],
   "author": "{{userFullName}} <{{userEmail}}>",
-  "license": "UNLICENSED",
-  "files": [
-    "/lib"
-  ]
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "svelte": "^3.0.0"
+  },
+  "peerDependencies": {
+    "svelte": "^3.0.0"
+  }
 }

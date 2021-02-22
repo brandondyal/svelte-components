@@ -1,5 +1,5 @@
 const { execSync } = require('child_process');
-const { createPackage } = require('./plop/generators');
+const { createPackage, createComponent } = require('./plop/generators');
 
 module.exports = (plop) => {
   plop.setHelper('userFullName', () => {
@@ -13,4 +13,5 @@ module.exports = (plop) => {
   });
 
   plop.setGenerator('package', createPackage);
+  plop.setGenerator('component', createComponent);
 };
