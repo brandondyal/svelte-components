@@ -1,5 +1,5 @@
 {
-  "name": "@brando-calrissian/",
+  "name": "@brando-calrissian/BackgroundLoader",
   "version": "1.0.0",
   "description": "svelte background loader",
   "main": "index.js",
